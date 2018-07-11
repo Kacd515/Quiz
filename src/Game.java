@@ -1,10 +1,20 @@
+import javax.swing.*;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
-public class Game {
+public class Game extends JFrame {
+
+    public Game() {
+        super("Miliarderzy"); // ustawia tytuł okna
+        setSize(500, 500); // ustawia wielkość okna
+        setVisible(true); // sprawia, że okno jest widoczne
+        setDefaultCloseOperation(1); //sprawia, że działa przycisk exit
+    }
 
     public static void main(String[] args) {
+
+        Game game = new Game();
 
             List<Question> questionList = new ArrayList<>();
 
