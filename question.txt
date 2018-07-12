@@ -1,0 +1,5 @@
+Czy 2+2=4? tak
+Czy Polska lezy w Europie? tak
+Czy Czy Java jest super? tak
+Czy Chopin urodzil sie w Warszawie? nie
+Tak czy Nie?? nie

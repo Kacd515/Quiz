@@ -60,7 +60,7 @@ public class Game extends JFrame implements ActionListener {
 
         //ustawia konkretną klasę, która będzie nam generowac pytania
         //za pomocą new NazwaKlasy możemy podmienić nasz generator za popmocą 1 linijki kodu!
-        setQuestionGenerator(new SimpleQuestionGenerator());
+        setQuestionGenerator(new FileGenerator());
 
         buttonYes = new JButton("Tak"); //tworzymy button z napisem tak
         buttonNo = new JButton("Nie"); //tworzymy button z napisem nie
@@ -90,7 +90,7 @@ public class Game extends JFrame implements ActionListener {
             if (clickedButton == buttonYes && currentQuestion.isCorrect()) {
                 numberOfPoints++;
             }
-            if (clickedButton == buttonNo && currentQuestion.isCorrect()) {
+            if (clickedButton == buttonNo && !currentQuestion.isCorrect()) {
                 numberOfPoints++;
             }
         }
